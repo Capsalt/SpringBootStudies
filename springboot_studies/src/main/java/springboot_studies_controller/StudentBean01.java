@@ -1,21 +1,24 @@
-package com.springboot.springboot_studies;
+package springboot_studies_controller;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class StudentBean02 implements StudentInterface {
+public class StudentBean01 implements StudentInterface{
 	
 	private String name;
 	private int age;
-	
-	public StudentBean02() {
+	private String id;
+
+	public StudentBean01() {
 		System.out.println("Constructor without parameter is used");
 	}
-	public StudentBean02(String name, int age) {
+
+	public StudentBean01(String name, int age, String id) {
 		this.name = name;
 		this.age = age;
+		this.id = id;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
@@ -28,15 +31,22 @@ public class StudentBean02 implements StudentInterface {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	
 	@Override
 	public String toString() {
-		return "StudentBean01: name=" + name + ", age=" + age;
+		return "StudentBean01: name=" + name + ", age=" + age + ", id=" + id;
 	}
+
 	@Override
 	public String study() {
 		// TODO Auto-generated method stub
-		return "StudentBean02 class'ı gelir";
-	}
+		return "StudentBean01 class'dan gelir";
+	}	
 
 }

@@ -1,4 +1,4 @@
-package com.springboot.springboot_studies;
+package springboot_studies_controller_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

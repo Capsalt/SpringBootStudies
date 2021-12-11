@@ -1,4 +1,4 @@
-package com.springboot.springboot_studies;
+package springboot_studies_controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
